@@ -1,0 +1,42 @@
+---
+import {
+  MoveRight,
+  SquareArrowOutUpRight,
+} from "lucide-react";
+import { getI18N } from "../../i18n";
+import { buttonConfig } from "../../config/header.config";
+import type { ActionButtonsProps } from "../../interfaces/header.interface";
+
+interface Props extends ActionButtonsProps {}
+
+const { currentLocale, className = "" } = Astro.props;
+const i18n = getI18N({ currentLocale });
+---
+
+<div class={`button-container ${className}`}>
+  <div class="button-wrapper">
+    <a href={`/${currentLocale}/home#projects`} class="btn btn-primary lg:text-lg md:text-base primary-button">
+      {i18n.HEADER.HEADER_BUTTON}
+      <span>
+        <MoveRight size={22} />
+      </span>
+    </a>
+  </div>
+  <div class="button-wrapper">
+    <a 
+      href={buttonConfig.cv.href}
+      target="_blank" 
+      class="btn btn-neutral lg:text-lg md:text-base primary-button" 
+      aria-label={buttonConfig.cv.ariaLabel}
+    >
+      {i18n.ABOUTME.ABOUT_DOWNLOAD_CV}
+      <span>
+        <SquareArrowOutUpRight size={20} />
+      </span>
+    </a>
+  </div>
+</div>
+
+<style>
+  @import url('../../styles/header.css');
+</style>

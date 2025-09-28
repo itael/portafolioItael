@@ -1,0 +1,108 @@
+{
+	"HEADER": {
+		"HEADER_TITLE": "Hola soy",
+		"HEADER_SUBTITLE": "Ingeniero y Desarrollador Full-Stack",
+		"HEADER_NAME": "Edy García",
+		"HEADER_ABOUT": "Ingeniero en Tecnologías de la Información titulado, a lo largo de mi carrera he desarrollado diferentes roles y proyectos, incluyendo desarrollo y mantenimento de aplicaciones web y de escritorio, gestión y optimización de bases de datos relacionales, computación en la nube (AWS). Me apasiona aprender y aplicar nuevas tecnologías para resolver problemas complejos y mejorar la eficiencia de los sistemas.",
+		"HEADER_BUTTON": "Ver proyectos"
+	},
+	"ABOUTME": {
+		"ABOUT_TITLE": "Acerca de mí",
+		"ABOUT_ABOUT_DESCRIPTION": "Con 10 años de experiencia en el área de la tecnología y desarrollo de software, dando soporte, mantenimento y desarrollo de aplicaciones web y de escritorio, he trabajado principalmente para Empresas financieras, asegurando un rendimiento óptimo de los sistemas. Para conocer mas acerca de mi experiencia laboral, puedes también verifcar las pestañas de educación, experiencia y habilidades.",
+		"ABOUT_DOWNLOAD_CV": "Ver CV",
+		"ABOUT_TITLE_CARD": "Ingeniero en Tecnologías de la Información. Desarrollador Full-Stack.",
+		"ABOUT_SUBTITLE": "Autónomo",
+		"EXPERIENCE": "Experiencia"
+	},
+	"SKILLS": {
+		"SKILLS_TITLE": "Habilidades"
+	},
+	"EDUCATION": {
+		"EDUCATION_TITLE": "Educación"
+	},
+	"PROJECTS": {
+		"PROJECTS_TITLE_BUTTON_F": "Frontend",
+		"PROJECTS_TITLE_BUTTON_B": "Backend",
+		"PROJECTS_TITLE_BUTTON_C": "Empresas",
+		"PROJECTS_TITLE_BUTTON_D": "Análisis de datos",
+		"PROJECTS_BADGE_FORK": "Colaboración"
+	},
+	"404": {
+		"404_BODY": "¡Ups! La página que estás buscando no se encuentra, intenta mas tarde o regresa a la página principal."
+	},
+	"UNIVERSITY": {
+		"UNIVERSITY_TITLE": "Universidad Mariano Galvez de Guatemala",
+		"UNIVERSITY_SUBTITLE": "Ingeniería en sistemas de información y ciencias de la computación",
+		"UNIVERSITY_TEXT": "Parte de mi carrera universitaria la estudie en la Universidad Mariano Galvez de Guatemala sede Chimaltenango y Antigua Guatemala, cerre el pensum en aproximadamente 6 años, fue un gran reto para mi esta carrera ya que a nivel diversificado yo habia estudiado Mecanica Automotriz, por lo cual el cambio de enfoque fue significativo para mi, pero logre adaptarme y aprender mucho en el proceso y me ayudo a ser la persona que soy hoy."
+	},
+	"OPINIONS": {
+		"OPINIONS_SUBTITLE": "Ten mucha paciencia contigo mismo y no te compares demasiado con los demás.",
+		"OPINIONS_TITLE": "Opiniones sobre mi trabajo",
+		"OPINIONS_SUB_SUBTILE": "¡Aquí unos comentarios!",
+
+		"OPINIONS_NOT_FOUND": "Aún no hay testimonios",
+		"OPINIONS_NOT_FOUND_DESCRIPTION": "¡Ups! aún no hay nada por aquí ni nada por allá, pronto verás algo aquí",
+
+		"OPINIONS_FORM_TITLE": "Escribe una opinión",
+		"OPINIONS_FORM_SUBTITLE": "Puedes compartir una experiencia que hayas tenido trabajando conmigo o una opinión sobre mi trabajo",
+
+		"OPINIONS_FORM_NAME_PLACEHOLDER": "Tu nombre completo",
+		"OPINIONS_FORM_JOB_PLACEHOLDER": "Ej: Desarrollador Frontend",
+		"OPINIONS_FORM_EXP_PLACEHOLDER": "Escribe tu experiencia aquí",
+
+		"OPINIONS_LOAD_SEND_INFORMATION": "Enviando...",
+		"OPINIONS_SEND_INFORMATION": "Enviar comentario",
+
+		"OPINIONS_FORM_VALID_MORE_INFORMATION_MIN": "La experiencia debe ser más grande de 14 caracteres",
+		"OPINIONS_FORM_VALID_MORE_INFORMATION_MAX": "Límite de caracteres alcanzado, solo se permiten 500 caracteres",
+
+		"OPINIONS_SEND_SUCCESSFULL": "¡Gracias por tu comentario!",
+		"OPINIONS_SEND_SUCCESSFULL_INFORMATION": "Tu respuesta se ha enviado correctamente. Apreciamos tu tiempo y retroalimentación.",
+		"OPINIONS_REDIRECT_COMMENTS": "Ir a los comentarios",
+
+		"OPINIONS_REDIRECT_COMMENTS_PAGE": "¡Dejame un comentario!",
+		"OPINIONS_NOT_FOUND_COUNTRY": "Astronauta en orbita",
+
+		"OPINIONS_TITLE_SELECT_COUNTRY": "País",
+		"OPINIONS_PLACEHOLDER_SELECT_COUNTRY": "Selecciona un país",
+
+		"OPINIONS_FORM_VALID_COUNTRY_EMPTY": "El país no puede estar vacío",
+		"OPINIONS_FORM_VALID_COUNTRY_FLAG_LENGTH": "No coincide el codigo con la entrada de banderas"
+	},
+	"FORM": {
+		"FORM_TITLE": "Contacto",
+		"FORM_DESCRIPTION": "Estoy disponible para trabajos freelance por hora o proyecto y que me permita llevar mi trabajo fijo de la mano. Conéctate conmigo a través de WhatsApp.",
+		"INPUT_NAME": "Nombre",
+		"INPUT_EMAIL": "Correo electrónico",
+		"INPUT_PHONE": "Teléfono",
+		"INPUT_JOB": "Puesto o especialidad",
+		"INPUT_JOB_INPUT_OPTIONAL": "opcional",
+		"INPUT_TELL_EXPERIENCE": "Contar experiencia",
+
+		"INPUT_MORE_INFORMATION": "Más información",
+		"INPUT_MORE_INFORMATION_TEXT": "Escribe tu mensaje aquí",
+		"BUTTON_LABEL": "Enviar mensaje",
+
+		"FORM_TITLE_SMALL_SUBHEADER": "ESTOY PARA LO QUE NECESITE Y PUEDE CONTACTARME",
+		"FORM_TITLE_HEAD_STRONG": "Hablemos",
+		"FORM_TITLE_HEAD_STRONG_SECOND": "de",
+		"FORM_TITLE_HEAD_STRONG_THRID": "sus necesidades en soluciones de sistemas",
+		"FORM_SUBTITLE_SUBHEAD": "¿Busca soluciones de sistemas de alta calidad adaptadas a sus necesidades? Contáctame.",
+		"FORM_OPTIONS_CONTACT_EMAIL": "Correo",
+		"FORM_OPTIONS_CONTACT_PHONE": "Teléfono",
+
+		"FORM_VALID_NAME": "El nombre debe ser mayor a 4 letras",
+		"FORM_VALID_LASTNAME": "El apellido debe ser mayor a 4 letras",
+		"FORM_VALID_EMAIL": "Formato de correo inválido",
+		"FORM_VALID_PHONE_MIN": "El número debe tener al menos 7 dígitos",
+		"FORM_VALID_PHONE_MAX": "El número es demasiado largo",
+		"FORM_VALID_INFORMATION": "Este campo es obligatorio",
+		"FORM_VALID_PHONE_REGEX": "El número debe contener solo dígitos y símbolos válidos (+, -, espacios, paréntesis)",
+		"FORM_VALID_MORE_INFORMATION_MIN": "La descripción debe ser más grande de 7 caracteres",
+		"FORM_VALID_MORE_INFORMATION_MAX": "Límite de caracteres alcanzado, solo se permiten 260 caracteres",
+		"FORM_INVALID_EMAIL": "Formato de correo inválido",
+
+		"FORM_SEND_INFORMATION_CORRECT": "¡Se ha enviado correctamente la información!",
+		"FORM_SEND_INFORMATION_INCORRECT": "Hubo un error al enviar el mensaje"
+	}
+}

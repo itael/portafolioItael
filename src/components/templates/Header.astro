@@ -1,0 +1,31 @@
+---
+import { Bubble } from "@/components/atoms/Bubble";
+import Avatar from "@/components/atoms/Avatar.astro";
+import HeroText from "@/components/atoms/HeroText.astro";
+import ActionButtons from "@/components/atoms/ActionButtons.astro";
+import SocialLinks from "@/components/atoms/SocialLinks.astro";
+import type { HeaderProps } from "../../interfaces/header.interface";
+
+interface Props extends HeaderProps {}
+
+const { currentLocale } = Astro;
+---
+<div class="hero-content">
+	<Bubble className="bg-accent" position="top-56 left-48" delay={3} duration={5} client:load />
+	<!-- Burbuja 2 con client:load -->
+	<Bubble className="bg-primary" position="right-48" delay={1.5} duration={7} client:load />
+	<!-- Burbuja 3 con client:load -->
+	<Bubble className="bg-secondary" position="bottom-96" delay={0.5} duration={26} client:load />     
+	
+	<Avatar />
+	
+	<div>
+		<HeroText currentLocale={currentLocale} />
+		<ActionButtons currentLocale={currentLocale} />
+		<SocialLinks />
+	</div>
+</div>
+
+<style>
+  @import url('../../styles/header.css');
+</style>

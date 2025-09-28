@@ -1,0 +1,107 @@
+---
+interface Props {
+  className?: string;
+  size?: 'sm' | 'md' | 'lg';
+  variant?: 'full' | 'icon' | 'text';
+}
+
+const { 
+  className = "",
+  size = 'md',
+  variant = 'full'
+} = Astro.props;
+
+const sizeClasses = {
+  sm: { container: 'h-8', text: 'text-lg', icon: 'w-6 h-6' },
+  md: { container: 'h-10', text: 'text-2xl', icon: 'w-8 h-8' },
+  lg: { container: 'h-12', text: 'text-3xl', icon: 'w-10 h-10' }
+};
+
+const currentSize = sizeClasses[size];
+---
+
+<div class={`flex items-center space-x-2 ${currentSize.container} ${className}`}>
+  {variant !== 'text' && (
+    <!-- Icono del Logo -->
+    <div class={`${currentSize.icon} relative`}>
+      <svg 
+        viewBox="0 0 40 40" 
+        class="w-full h-full"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <!-- Gradiente para el logo -->
+        <defs>
+          <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+            <stop offset="25%" style="stop-color:#764ba2;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#f093fb;stop-opacity:1" />
+            <stop offset="75%" style="stop-color:#f5576c;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#4facfe;stop-opacity:1" />
+          </linearGradient>
+          
+          <!-- Sombra -->
+          <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+          </filter>
+        </defs>
+        
+        <!-- Forma principal del logo - IG estilizada -->
+        <g filter="url(#shadow)">
+          <!-- Letra I -->
+          <rect x="6" y="8" width="4" height="24" rx="2" fill="url(#logoGradient)" />
+          <rect x="4" y="8" width="8" height="3" rx="1.5" fill="url(#logoGradient)" />
+          <rect x="4" y="29" width="8" height="3" rx="1.5" fill="url(#logoGradient)" />
+          
+          <!-- Letra G -->
+          <path 
+            d="M16 8 C24 8 30 14 30 20 C30 26 24 32 16 32 C12 32 8 30 6 27 L10 25 C11 27 13 28 16 28 C22 28 26 24 26 20 L26 18 L20 18 L20 22 L22 22 L22 20 C22 22 20 24 16 24 C12 24 10 22 10 20 C10 16 12 12 16 12 C18 12 20 13 21 15 L25 13 C23 10 20 8 16 8 Z" 
+            fill="url(#logoGradient)" 
+          />
+          
+          <!-- Punto decorativo conectando I y G -->
+          <circle cx="13.5" cy="20" r="1.5" fill="url(#logoGradient)" />
+        </g>
+      </svg>
+    </div>
+  )}
+  
+  {variant !== 'icon' && (
+    <!-- Texto del Logo -->
+    <span class={`font-bold ${currentSize.text} logo-text`}>
+      Ita<span class="text-secondary">García</span>
+    </span>
+  )}
+</div>
+
+<style>
+  .logo-text {
+    background: linear-gradient(
+      135deg,
+      #667eea 0%,
+      #764ba2 25%,
+      #f093fb 50%,
+      #f5576c 75%,
+      #4facfe 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-family: 'Inter', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+  
+  /* Fallback para navegadores sin soporte */
+  @supports not (background-clip: text) {
+    .logo-text {
+      background: none;
+      color: #667eea;
+    }
+  }
+  
+  /* Animación hover */
+  .logo-text:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+  }
+</style>

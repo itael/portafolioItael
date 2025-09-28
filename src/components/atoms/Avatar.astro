@@ -1,0 +1,32 @@
+---
+import { avatarConfig } from "../../config/header.config";
+import type { AvatarProps } from "../../interfaces/header.interface";
+
+interface Props extends AvatarProps {}
+
+const { 
+  className = "",
+  imageSrc = avatarConfig.imageSrc,
+  imageAlt = avatarConfig.imageAlt
+} = Astro.props;
+---
+
+<div class={`glowing-avatar-container animate__animated animate__fadeIn ${className}`}>
+  <!-- Borde giratorio multicolor con efecto blur -->
+  <div class="rotating-glow-border"></div>
+  
+  <!-- Avatar circular -->
+  <div class="avatar-image">
+    <picture>
+      <source 
+        media={avatarConfig.responsiveSource.media} 
+        srcset={avatarConfig.responsiveSource.srcset} 
+      />
+      <img src={imageSrc} alt={imageAlt} loading="lazy" />
+    </picture>
+  </div>
+</div>
+
+<style>
+  @import url('../../styles/header.css');
+</style>

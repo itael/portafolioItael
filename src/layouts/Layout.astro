@@ -1,0 +1,123 @@
+---
+import "animate.css";
+import "@/styles/styles.css";
+import "@/styles/app.css";
+import "@/styles/header.css";
+import "swiper/swiper-bundle.css";
+import {
+	dataTitlePage,
+	dataTitlePageEN,
+	dataTitlePageFR,
+} from "@/utils/dataTitlePage";
+
+const pathSegments = Astro.url.pathname.split("/");
+const { currentLocale } = Astro;
+
+const titles =
+	currentLocale === "en"
+		? dataTitlePageEN
+		: currentLocale === "fr"
+			? dataTitlePageFR
+			: dataTitlePage;
+
+const pageIndex =
+	pathSegments[2] === "about"
+		? 1
+		: pathSegments[2] === "projects"
+			? 2
+			: pathSegments[2] === "contact"
+				? 3
+				: 0;
+
+const titleLang = titles[pageIndex];
+
+function capitalizeFirstLetter(string) {
+	return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+const capitalizedTitle = capitalizeFirstLetter(titleLang);
+---
+
+<!doctype html>
+<html lang={currentLocale} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{capitalizedTitle}</title>
+    <meta name="description" content="Web developer JR - IT Engineer" />
+    <!-- Open Graph Meta Tags (para Facebook, LinkedIn, y otras redes) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://khelde.vercel.app/es/home" />
+    <meta property="og:title" content="Portafolio de Edy García" />
+    <meta
+      property="og:description"
+      content="Portafolio de Edy García, desarrollador web con experiencia en frontend y backend. Mira mis proyectos y habilidades."
+    />
+    <meta property="og:image" content="https://khelde.vercel.app/kdl.webp" />
+    <meta
+      property="og:image:alt"
+      content="Logo de Edy García , desarrollador web."
+    />
+    <meta property="og:site_name" content="Portafolio Edy García" />
+
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+     <meta
+      property="twitter:image"
+      content="https://khelde.vercel.app/kdl.webp"
+    />
+    <meta property="twitter:url" content="https://khelde.vercel.app/es/home" />
+    <meta property="twitter:title" content="Portafolio de Edy García" />
+    <meta
+      property="twitter:description"
+      content="Portafolio de Edy García, desarrollador web con experiencia en frontend y backend. Mira mis proyectos y habilidades."
+    />
+    <meta
+      property="twitter:image:alt"
+      content="Logo de Edy García, desarrollador web."
+    />
+
+    <!-- Metadatos para WhatsApp (Usa los mismos que para Open Graph) -->
+    <meta property="og:image" content="https://khelde.vercel.app/kdl.webp" />
+    <meta property="og:title" content="Portafolio de Edy García" />
+    <meta
+      property="og:description"
+      content="Portafolio de Edy García, desarrollador web con experiencia en frontend y backend. Mira mis proyectos y habilidades."
+    />
+    <!-- Metadatos personalizados para IA u otras plataformas -->
+    <meta property="ia:markup_url" content="https://khelde.vercel.app/markup" />
+    <meta
+      property="ia:markup_url_dev"
+      content="https://khelde.vercel.app/markup_dev"
+    />
+    <meta property="ia:rules_url" content="https://khelde.vercel.app/rules" />
+    <meta
+      property="ia:rules_url_dev"
+      content="https://khelde.vercel.app/rules_dev"
+    />
+    <!-- Metadatos adicionales -->
+    <meta name="theme-color" content="#6f37cf" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="itael" />
+    <meta name="copyright" content="Copyright © 2025" />
+    <link rel="icon" type="image/svg+xml" href="/kdl.webp" />
+    <link rel="canonical" href="https://khelde.vercel.app/es" />
+    <!-- Sitemap -->
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body class="bg-base-300">
+    <div>
+      <slot />
+    </div>
+    <script>
+      (function () {
+        const theme = localStorage.getItem("theme") || "winter";
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <script src="../js/ascii.js"></script>
+  </body>
+</html>

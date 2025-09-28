@@ -1,0 +1,31 @@
+---
+import { getI18N } from "../../i18n";
+import type { HeroTextProps } from "../../interfaces/header.interface";
+
+interface Props extends HeroTextProps {}
+
+const { currentLocale, className = "" } = Astro.props;
+const i18n = getI18N({ currentLocale });
+---
+
+<div class={`content-container animate__animated animate__zoomIn ${className}`}>
+  <span class="subtitle">
+    {i18n.HEADER.HEADER_SUBTITLE}
+  </span>
+  
+  <h1 class="main-title">
+    {i18n.HEADER.HEADER_TITLE}
+  </h1>
+  
+  <span class="name-title">
+    {i18n.HEADER.HEADER_NAME}
+  </span>
+  
+  <p class="description">
+    {i18n.HEADER.HEADER_ABOUT}
+  </p>
+</div>
+
+<style>
+  @import url('../../styles/header.css');
+</style>

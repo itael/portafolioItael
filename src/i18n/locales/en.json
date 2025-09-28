@@ -1,0 +1,108 @@
+{
+	"HEADER": {
+		"HEADER_TITLE": "Hello, I am",
+		"HEADER_SUBTITLE": "Engineer and Full-Stack Developer",
+		"HEADER_NAME": "Edy García",
+		"HEADER_ABOUT": "Graduated Information Technology Engineer, throughout my career I have developed different roles and projects, including development and maintenance of web and desktop applications, management and optimization of relational databases, cloud computing (AWS). I am passionate about learning and applying new technologies to solve complex problems and improve system efficiency.",
+		"HEADER_BUTTON": "View projects"
+	},
+	"ABOUTME": {
+		"ABOUT_TITLE": "About me",
+		"ABOUT_ABOUT_DESCRIPTION": "With 10 years of experience in technology and software development, providing support, maintenance and development of web and desktop applications, I have worked mainly for financial companies, ensuring optimal system performance. To learn more about my work experience, you can also check the education, experience and skills tabs.",
+		"ABOUT_DOWNLOAD_CV": "View CV",
+		"ABOUT_TITLE_CARD": "Information Technology Engineer. Full-Stack Developer.",
+		"ABOUT_SUBTITLE": "Freelancer",
+		"EXPERIENCE": "Experience"
+	},
+	"SKILLS": {
+		"SKILLS_TITLE": "Skills"
+	},
+	"EDUCATION": {
+		"EDUCATION_TITLE": "Education"
+	},
+	"PROJECTS": {
+		"PROJECTS_TITLE_BUTTON_F": "Frontend",
+		"PROJECTS_TITLE_BUTTON_B": "Backend",
+		"PROJECTS_TITLE_BUTTON_C": "Companies",
+		"PROJECTS_TITLE_BUTTON_D": "Data Analysis",
+		"PROJECTS_BADGE_FORK": "Collaboration"
+	},
+	"404": {
+		"404_BODY": "Oops! The page you are looking for cannot be found, please try again later or return to the main page."
+	},
+	"UNIVERSITY": {
+		"UNIVERSITY_TITLE": "Mariano Galvez University of Guatemala",
+		"UNIVERSITY_SUBTITLE": "Information Systems Engineering and Computer Science",
+		"UNIVERSITY_TEXT": "I studied part of my university career at Mariano Galvez University of Guatemala, Chimaltenango and Antigua Guatemala campuses. I completed the curriculum in approximately 6 years. This career was a great challenge for me since at the high school level I had studied Automotive Mechanics, so the change of focus was significant for me, but I managed to adapt and learn a lot in the process, which helped me become the person I am today."
+	},
+	"OPINIONS": {
+		"OPINIONS_SUBTITLE": "Be very patient with yourself and don't compare yourself too much with others.",
+		"OPINIONS_TITLE": "Opinions about my work",
+		"OPINIONS_SUB_SUBTILE": "Here are some comments!",
+
+		"OPINIONS_NOT_FOUND": "No testimonials yet",
+		"OPINIONS_NOT_FOUND_DESCRIPTION": "Oops! there's nothing here yet, you'll see something here soon",
+
+		"OPINIONS_FORM_TITLE": "Write an opinion",
+		"OPINIONS_FORM_SUBTITLE": "You can share an experience you've had working with me or an opinion about my work",
+
+		"OPINIONS_FORM_NAME_PLACEHOLDER": "Your full name",
+		"OPINIONS_FORM_JOB_PLACEHOLDER": "Ex: Frontend Developer",
+		"OPINIONS_FORM_EXP_PLACEHOLDER": "Write your experience here",
+
+		"OPINIONS_LOAD_SEND_INFORMATION": "Sending...",
+		"OPINIONS_SEND_INFORMATION": "Send comment",
+
+		"OPINIONS_FORM_VALID_MORE_INFORMATION_MIN": "The experience must be longer than 14 characters",
+		"OPINIONS_FORM_VALID_MORE_INFORMATION_MAX": "Character limit reached, only 500 characters allowed",
+
+		"OPINIONS_SEND_SUCCESSFULL": "Thank you for your comment!",
+		"OPINIONS_SEND_SUCCESSFULL_INFORMATION": "Your response has been sent successfully. We appreciate your time and feedback.",
+		"OPINIONS_REDIRECT_COMMENTS": "Go to comments",
+
+		"OPINIONS_REDIRECT_COMMENTS_PAGE": "Leave me a comment!",
+		"OPINIONS_NOT_FOUND_COUNTRY": "Astronaut in orbit",
+
+		"OPINIONS_TITLE_SELECT_COUNTRY": "Country",
+		"OPINIONS_PLACEHOLDER_SELECT_COUNTRY": "Select a country",
+
+		"OPINIONS_FORM_VALID_COUNTRY_EMPTY": "Country cannot be empty",
+		"OPINIONS_FORM_VALID_COUNTRY_FLAG_LENGTH": "The code does not match the flag entry"
+	},
+	"FORM": {
+		"FORM_TITLE": "Contact",
+		"FORM_DESCRIPTION": "I am available for freelance work by hour or project that allows me to manage alongside my regular work. Connect with me through WhatsApp.",
+		"INPUT_NAME": "Name",
+		"INPUT_EMAIL": "Email",
+		"INPUT_PHONE": "Phone",
+		"INPUT_JOB": "Position or specialty",
+		"INPUT_JOB_INPUT_OPTIONAL": "optional",
+		"INPUT_TELL_EXPERIENCE": "Tell experience",
+
+		"INPUT_MORE_INFORMATION": "More information",
+		"INPUT_MORE_INFORMATION_TEXT": "Write your message here",
+		"BUTTON_LABEL": "Send message",
+
+		"FORM_TITLE_SMALL_SUBHEADER": "I AM HERE FOR WHATEVER YOU NEED AND YOU CAN CONTACT ME",
+		"FORM_TITLE_HEAD_STRONG": "Let's talk",
+		"FORM_TITLE_HEAD_STRONG_SECOND": "about",
+		"FORM_TITLE_HEAD_STRONG_THRID": "your system solution needs",
+		"FORM_SUBTITLE_SUBHEAD": "Looking for high-quality system solutions tailored to your needs? Contact me.",
+		"FORM_OPTIONS_CONTACT_EMAIL": "Email",
+		"FORM_OPTIONS_CONTACT_PHONE": "Phone",
+
+		"FORM_VALID_NAME": "Name must be longer than 4 letters",
+		"FORM_VALID_LASTNAME": "Last name must be longer than 4 letters",
+		"FORM_VALID_EMAIL": "Invalid email format",
+		"FORM_VALID_PHONE_MIN": "Number must have at least 7 digits",
+		"FORM_VALID_PHONE_MAX": "Number is too long",
+		"FORM_VALID_INFORMATION": "This field is required",
+		"FORM_VALID_PHONE_REGEX": "Number must contain only digits and valid symbols (+, -, spaces, parentheses)",
+		"FORM_VALID_MORE_INFORMATION_MIN": "Description must be longer than 7 characters",
+		"FORM_VALID_MORE_INFORMATION_MAX": "Character limit reached, only 260 characters allowed",
+		"FORM_INVALID_EMAIL": "Invalid email format",
+
+		"FORM_SEND_INFORMATION_CORRECT": "Information has been sent successfully!",
+		"FORM_SEND_INFORMATION_INCORRECT": "There was an error sending the message"
+	}
+}

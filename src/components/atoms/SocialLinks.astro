@@ -1,0 +1,30 @@
+---
+import { socialLinksConfig } from "../../config/header.config";
+import type { SocialLinksProps } from "../../interfaces/header.interface";
+
+interface Props extends SocialLinksProps {}
+
+const { className = "" } = Astro.props;
+---
+
+<div class={`social-container ${className}`}>
+  {socialLinksConfig.map((link) => {
+    const IconComponent = link.iconComponent;
+    return (
+      <a 
+        href={link.href}
+        target={link.target}
+        aria-label={link.ariaLabel}
+        class="social-link"
+      >
+        <span class="social-icon">
+          <IconComponent size={link.iconSize} />
+        </span>
+      </a>
+    );
+  })}
+</div>
+
+<style>
+  @import url('../../styles/header.css');
+</style>
